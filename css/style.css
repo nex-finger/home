@@ -21,9 +21,9 @@ img{
 }
 
 hr{
-    border-width: 3px 0px 0px 0px;
+    border-width: 2px 0px 0px 0px;
     border-style: solid;
-    border-color: #fff;
+    border-color: #0ac;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -60,12 +60,12 @@ hr{
 
 .main-nav a:active,
 .side-nav a:active{
-    color: #ffa;
+    color: #8f8;
 }
 
 .main-nav a:target,
 .side-nav a:target{
-    color: #ffa;
+    color: #8f8;
 }
 
 
@@ -86,6 +86,7 @@ hr{
 
 /* フッター -------------------- */
 footer{
+    background-color: #000;
     text-align: center;
     padding: 20px 0;
 }
@@ -172,12 +173,13 @@ article p{
 .sub-title{
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.sub-title{
     font-family: 'Sawarabi Gothic', sans-serif;
     font-size: 2rem;
     font-weight: normal;
+}
+
+.sub-title::first-letter{
+    color: #8f8;
 }
 
 .subsub-title{
@@ -251,4 +253,15 @@ aside li{
 .side-explanation{
     margin-left: 20px;
     font-size: 0.875rem;
+}
+
+.side-article{
+    display: flex;
+}
+
+.side-image{
+    position: relative;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
