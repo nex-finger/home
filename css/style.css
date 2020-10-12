@@ -20,6 +20,14 @@ img{
     max-width: 100%;
 }
 
+hr{
+    border-width: 3px 0px 0px 0px;
+    border-style: solid;
+    border-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /* HEADER -------------------- */
 .logo{
     width: 540px;
@@ -40,13 +48,26 @@ img{
     margin-left: 50px;
 }
 
-.main-nav a{
+.main-nav a,
+.side-nav a{
     color: #fff;
 }
 
-.main-nav a:hover{
-    color: #0bd
+.main-nav a:hover,
+.side-nav a:hover{
+    color: #0ac;
 }
+
+.main-nav a:active,
+.side-nav a:active{
+    color: #ffa;
+}
+
+.main-nav a:target,
+.side-nav a:target{
+    color: #ffa;
+}
+
 
 .page-header{
     display: flex;
@@ -74,14 +95,29 @@ footer p{
     font-size: 0.875rem;
 }
 
+footer a{
+    color: #fff;
+}
+
 /* 記事部分 -------------------- */
 article{
-    width: 76%;
+    width: 72%;
 }
 
 /* サイドバー */
 aside{
-    width: 20%;
+    width: 24%;
+    max-width: 24%;
+    position: relative;
+}
+
+article img{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+article p{
+    margin-bottom: 0.5rem;
 }
 
 .news-contents{
@@ -91,18 +127,18 @@ aside{
 }
 
 .youtube{
-    position:relative;
-    width:100%;
-    height:0;
-    padding-top:56.25%;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
 }
 
 .youtube iframe{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .post-info{
@@ -112,7 +148,7 @@ aside{
 }
 
 .post-date{
-    background: #0bd;
+    background: #0ac;
     border-radius: 50%;
     clear: #fff;
     width: 100px;
@@ -126,20 +162,93 @@ aside{
 
 .post-date span{
     font-size: 1rem;
-    border-top: 1px rgba(255, 255, 255, .5) solid;
+    border-top: 3px rgba(255, 255, 255, .5) solid;
     padding-top: 6px;
     display: block;
     width: 60%;
     margin: 0 auto;
 }
 
-.post-title{
+.sub-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-title{
     font-family: 'Sawarabi Gothic', sans-serif;
     font-size: 2rem;
+    font-weight: normal;
+}
+
+.subsub-title{
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 1.5rem;
     font-weight: normal;
 }
 
 .post-title,
 .post-cat{
     margin-left: 120px;
+}
+
+.clan-logo{
+    position: relative;
+    width: 270px;
+    height: 270px;
+}
+
+.clan-logo-a{
+    position: absolute;
+}
+
+.explanation{
+    margin-left: 270px;
+}
+
+.under-line{
+    background: linear-gradient(transparent 60%, #0ac);   
+    border-radius: 10px;
+}
+
+/* サイドバー -------------------- */
+
+aside p{
+    color: #fff;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+aside a{
+    font-size: 1.25rem;
+}
+
+.side-nav a:hover{
+    color: #0ac;
+}
+
+.side-nav a:active,
+.side-nav a:target{
+    color: #ffa;
+}
+
+.side{
+    display: block;
+}
+
+.side-nav li{ 
+    display: block;
+    margin-bottom: 0.25rem;
+    list-style: none;
+}
+
+aside li{
+    border-radius: 0%;
+    width: 100%;
+    background-image: linear-gradient(0deg, #056, #222);
+    border-radius: 10px;
+}
+
+.side-explanation{
+    margin-left: 20px;
+    font-size: 0.875rem;
 }
