@@ -7,6 +7,9 @@ html{
 }
 
 body{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
     font-family: 'Sawarabi Gothic', sans-serif;
     line-height: 1.7;
     color: #fff;
@@ -89,6 +92,7 @@ footer{
     background-color: #000;
     text-align: center;
     padding: 20px 0;
+    margin-top: auto;
 }
 
 footer p{
@@ -113,8 +117,8 @@ aside{
 }
 
 article img{
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 article p{
@@ -204,7 +208,7 @@ article p{
 }
 
 .explanation{
-    margin-left: 270px;
+    margin-left: 280px;
 }
 
 .under-line{
@@ -217,7 +221,6 @@ article p{
 aside p{
     color: #fff;
     font-size: 0.875rem;
-    margin-bottom: 0.5rem;
 }
 
 aside a{
@@ -253,6 +256,7 @@ aside li{
 .side-explanation{
     margin-left: 20px;
     font-size: 0.875rem;
+    margin-bottom: 0.5rem;
 }
 
 .side-article{
@@ -262,6 +266,76 @@ aside li{
 .side-image{
     position: relative;
     width: 50%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+.side-sub-title{
+    font-size: 0.875rem;
+
+}
+
+/* team.html -------------------- */
+.profile-image{
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+
+.profile-name{
+    margin-left: 170px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.profile-explanation{
+    margin-left: 170px;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid 2px #fff;
+    margin-bottom: 2rem;
+}
+
+table th {
+    width: 70px;
+    padding: 10px;
+    text-align: center;
+    background: #056;
+}
+
+table td {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.maru{
+    color: #55f;
+}
+
+.sankaku{
+    color: #5f5;
+}
+
+.batu{
+    color: #f55;
+}
+
+.legend-image{
+    width: 163px;
+    height: 91.5px;
+}
+
+.profile-link{
+    height: 20px;
+    width: auto;
+}
+
+.profile-rank{
+    padding: 0px;
+    width: 50px;
+    height: auto;
 }
