@@ -87,6 +87,10 @@ hr{
 
 }
 
+.syomei{
+    text-align: right;
+}
+
 /* フッター -------------------- */
 footer{
     background-color: #000;
@@ -325,6 +329,7 @@ table td {
 }
 
 .legend-image{
+    display: inline-flex;
     width: 163px;
     height: 91.5px;
 }
