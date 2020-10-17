@@ -233,12 +233,12 @@ aside a{
 }
 
 .side-nav a:hover{
-    color: #0ac;
+    color: #8f8;
 }
 
 .side-nav a:active,
 .side-nav a:target{
-    color: #;
+    color: #8f8;
 }
 
 .side{
